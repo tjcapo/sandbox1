@@ -19,6 +19,14 @@ float squareRoot (float x)
     
     float  guess = 1.0;
     
+    float absoluteValue (float x);
+
+    if (x < 0)
+    {
+        printf ("Negative argument to squareRoot.\n");
+        return -1.0;
+    }
+
     while (absoluteValue (guess * guess - x) >= epsilon)
         guess = (x / guess + guess) / 2.0;
         
