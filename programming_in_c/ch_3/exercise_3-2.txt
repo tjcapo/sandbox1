@@ -1,0 +1,18 @@
+
+
+Determine if the following are valid variable names:
+
+Int .................. - valid 
+Calloc ............... - valid 
+floating ............. - valid 
+ReInitialize ......... - valid 
+char ................. - invalid because it is reserved
+Xx ................... - valid 
+_1312 ................ - valid 
+_ .................... - valid 
+6_05 ................. - invalid because it starts with a number
+alpha_beta_routine ... - valid 
+z .................... - valid
+A$ ................... - invalid because $ can't be used
+
+

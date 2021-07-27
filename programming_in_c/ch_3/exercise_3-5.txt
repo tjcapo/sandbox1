@@ -1,0 +1,5 @@
+
+
+The output from the program would be:
+
+d = d

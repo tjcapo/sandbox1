@@ -1,0 +1,6 @@
+
+
+The output from the program would be:
+
+The result is 95
+

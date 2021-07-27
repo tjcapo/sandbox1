@@ -1,0 +1,30 @@
+Determine which of the following are invalid constants:
+
+123.456 ..... - valid float
+0001 ........ - invalid because too many leading 0's 
+0Xab05 ...... - valid hex
+123.5e2 ..... - valid scientific notation
+98.6F ....... - invalid because F does not belong at the end of any constant types
+0996 ........ - valid int (oct)
+1234uL ...... - valid unsigned long 
+1.234L ...... - valid long double  
+0XABCDEFL ... - valid long int (hex)
+0x10.5 ...... - invalid because floats can't be hex in this way
+0xFFFF ...... - valid hex int 
+0L .......... - valid long 
+.0001 ....... - invalid because there is no digit before the decimal
+98.7U ....... - invalid because C does not have unsigned floats
+-12E-12 ..... - valid scientific notation 
+1.2Fe-7 ..... - invalid mixing of hex and float 
+197u ........ - valid unsigned int 
+0xabcu ...... - valid unsigned int 
+0x0G1 ....... - invalid because there is no G in hex 
+123L  ....... - valid long 
+-597.25 ..... - valid float 
++12  ........ - valid signed int 
+17777s ...... - invalid because there is no s suffix in numbers
+07777 ....... - valid oct 
+15,000 ...... - invalid because "," is invalid 
+100U ........ - valid unsigned int
++123 ........ - valid signed int 
+

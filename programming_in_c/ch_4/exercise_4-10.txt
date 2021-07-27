@@ -1,0 +1,4 @@
+/*  Page 91, Exercise 4.10
+    Check what happens if a negative number is entered into program 4.8  */
+
+When it returns the numbers they have a - between them
