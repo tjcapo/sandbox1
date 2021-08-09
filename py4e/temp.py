@@ -1,26 +1,19 @@
+# parse a file with text and numbers
+# extract all the numbers in the file
+# compute the sum of the numbers
 
+import re
 
+filename = "regex_sum_1264277.txt"
+fhand = open(filename)
+sumtotal = 0
 
-fname = input("Enter file name: ")
-if len(fname) < 1:
-    fname = "mbox-short.txt"
-
-fh = open(fname)
-letters = dict()
-
-for line in fh:
-    for w in line:
-        for c in w:
-            if c.isalpha() == True :
-                c = c.lower()
-                if c not in letters:
-                    letters[c] = 1
-                else:
-                    letters[c] += 1
-    
-tLetters = list(letters.items())
-tLetters.sort()
-
-for l in tLetters:
-    print(l[0], l[1])
-    
+for line in fhand:
+    line = line.rstrip()
+    numbers = re.findall('([0-9]+)', line)
+    if len(numbers) > 0:
+        numbers = [int(x) for x in numbers]
+        for n in numbers:
+            sumtotal += n
+        
+print(sumtotal)
