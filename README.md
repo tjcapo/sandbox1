@@ -1,5 +1,7 @@
 # sandbox1
 
-Mostly programs from textbooks and courses
+Learning git
+
+This is mostly programs from textbooks and courses
 
 Might put some other things in here too
